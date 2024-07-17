@@ -9,12 +9,9 @@ BLUE = (0, 0, 255)
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 600
 class EndIMG(pygame.sprite.Sprite):
-    """ Platform That Tells You The Stage Is Over """
+    """ Object that tells you the stage is over (unused, needs to be removed or reworked) """
  
     def __init__(self, width, height):
-        """ Platform constructor. Assumes constructed with user passing in
-            an array of 5 numbers like what's defined at the top of this code.
-            """
         super().__init__()
  
         self.image = pygame.image.load(os.path.join('blockimages', "End.gif")).convert()
